@@ -5,23 +5,15 @@
 <title>Garnet Brook Farm</title>
 
 <style>
-/* --------------------------------------------------
-   Base Layout & Typography
--------------------------------------------------- */
-
 body {
   font-family: serif;
   background: linen;
-  color: #1e1b18; /* oak-gall ink */
+  color: #1e1b18;
   margin: 0 auto;
   padding: 1rem;
-  max-width: 60rem; /* keeps it book-like on large screens */
+  max-width: 60rem;
   line-height: 1.35;
 }
-
-/* --------------------------------------------------
-   Header Block (Printer's Mark)
--------------------------------------------------- */
 
 .header-block {
   display: flex;
@@ -49,10 +41,6 @@ body {
   font-style: italic;
 }
 
-/* --------------------------------------------------
-   Section Headers
--------------------------------------------------- */
-
 .section-head {
   font-size: 1.2rem;
   margin-top: 2rem;
@@ -61,26 +49,14 @@ body {
   font-style: italic;
 }
 
-/* --------------------------------------------------
-   Divider
--------------------------------------------------- */
-
 .divider {
   border-bottom: 2px dotted #c8c2b4;
   margin: 2rem 0;
 }
 
-/* --------------------------------------------------
-   Table Wrapper (for small-screen scrolling)
--------------------------------------------------- */
-
 .table-wrapper {
-  overflow-x: auto;
+  width: 100%;
 }
-
-/* --------------------------------------------------
-   Product Table
--------------------------------------------------- */
 
 .product-table {
   width: 100%;
@@ -88,7 +64,6 @@ body {
   font-size: 1rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  min-width: 500px; /* ensures columns stay readable when scrolling */
 }
 
 .product-table th {
@@ -104,13 +79,11 @@ body {
   border-bottom: 1px solid #e2dbcd;
 }
 
-/* Description Column */
 .desc {
   color: #4a453f;
   font-size: 0.9rem;
 }
 
-/* Availability States */
 .available {
   cursor: pointer;
 }
@@ -123,7 +96,6 @@ body {
   color: dimgray;
 }
 
-/* SOLD OUT Text */
 .soldout-text {
   color: #b22222;
   font-weight: bolder;
@@ -131,31 +103,35 @@ body {
   letter-spacing: 0.3px;
 }
 
-/* Price Column */
 .price {
   text-align: right;
   white-space: nowrap;
 }
 
-/* --------------------------------------------------
-   Responsive Breakpoint
--------------------------------------------------- */
-
 @media (max-width: 600px) {
   body {
     padding: 0.75rem;
+    font-size: 1.15rem;
   }
 
   .title-stack h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .product-table {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+  }
+
+  .product-table colgroup col {
+    width: auto !important;
   }
 }
 </style>
@@ -163,7 +139,6 @@ body {
 
 <body>
 
-<!-- Header with Printer's Mark -->
 <div class="header-block">
   <img src="logo.png" alt="Garnet Brook Farm logo" class="logo">
   <div class="title-stack">
@@ -177,9 +152,9 @@ body {
 <div class="table-wrapper">
 <table class="product-table">
   <colgroup>
-    <col style="width: 30%;">
-    <col style="width: 55%;">
-    <col style="width: 15%;">
+    <col style="width: 20%;">
+    <col style="width: 70%;">
+    <col style="width: 10%;">
   </colgroup>
 
   <thead>
@@ -219,9 +194,9 @@ body {
 <div class="table-wrapper">
 <table class="product-table">
   <colgroup>
-    <col style="width: 30%;">
-    <col style="width: 55%;">
-    <col style="width: 15%;">
+    <col style="width: 20%;">
+    <col style="width: 70%;">
+    <col style="width: 10%;">
   </colgroup>
 
   <thead>
