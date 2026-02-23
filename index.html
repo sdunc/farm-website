@@ -5,18 +5,23 @@
 <title>Garnet Brook Farm</title>
 
 <style>
-/* --- Base Layout & Typography --- */
+/* --------------------------------------------------
+   Base Layout & Typography
+-------------------------------------------------- */
 
 body {
   font-family: serif;
   background: linen;
   color: #1e1b18; /* oak-gall ink */
-  margin: 0;
-  padding: 2rem;
-  line-height: 1.2;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 60rem; /* keeps it book-like on large screens */
+  line-height: 1.35;
 }
 
-/* --- Header Block (Printer's Mark) --- */
+/* --------------------------------------------------
+   Header Block (Printer's Mark)
+-------------------------------------------------- */
 
 .header-block {
   display: flex;
@@ -44,7 +49,9 @@ body {
   font-style: italic;
 }
 
-/* --- Section Headers --- */
+/* --------------------------------------------------
+   Section Headers
+-------------------------------------------------- */
 
 .section-head {
   font-size: 1.2rem;
@@ -54,14 +61,26 @@ body {
   font-style: italic;
 }
 
-/* --- Divider --- */
+/* --------------------------------------------------
+   Divider
+-------------------------------------------------- */
 
 .divider {
   border-bottom: 2px dotted #c8c2b4;
   margin: 2rem 0;
 }
 
-/* --- Product Table --- */
+/* --------------------------------------------------
+   Table Wrapper (for small-screen scrolling)
+-------------------------------------------------- */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* --------------------------------------------------
+   Product Table
+-------------------------------------------------- */
 
 .product-table {
   width: 100%;
@@ -69,6 +88,7 @@ body {
   font-size: 1rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  min-width: 500px; /* ensures columns stay readable when scrolling */
 }
 
 .product-table th {
@@ -84,15 +104,13 @@ body {
   border-bottom: 1px solid #e2dbcd;
 }
 
-/* --- Description Column --- */
-
+/* Description Column */
 .desc {
   color: #4a453f;
   font-size: 0.9rem;
 }
 
-/* --- Availability States --- */
-
+/* Availability States */
 .available {
   cursor: pointer;
 }
@@ -105,19 +123,40 @@ body {
   color: dimgray;
 }
 
-/* --- SOLD OUT Text --- */
-
+/* SOLD OUT Text */
 .soldout-text {
-  color: #b22222;      /* warm stamp red */
-  font-weight: bolder;   /* bold but not heavy */
-  font-size: 0.8rem;   /* smaller than body text */
-  letter-spacing: 0.3px; /* optional: gives it a typeset feel */
+  color: #b22222;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
 }
-/* --- Price Column --- */
 
+/* Price Column */
 .price {
   text-align: right;
   white-space: nowrap;
+}
+
+/* --------------------------------------------------
+   Responsive Breakpoint
+-------------------------------------------------- */
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.75rem;
+  }
+
+  .title-stack h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .product-table {
+    font-size: 0.9rem;
+  }
 }
 </style>
 </head>
@@ -135,6 +174,7 @@ body {
 
 <h2 class="section-head">Online Store</h2>
 
+<div class="table-wrapper">
 <table class="product-table">
   <colgroup>
     <col style="width: 30%;">
@@ -149,8 +189,8 @@ body {
       <th class="price">&nbsp;</th>
     </tr>
   </thead>
-  <tbody>
 
+  <tbody>
     <tr class="available">
       <td>Cornelian Cherry Seed</td>
       <td class="desc">packet of 9 seeds · ancient dogwood species · edible fruit</td>
@@ -165,17 +205,18 @@ body {
 
     <tr class="unavailable">
       <td>American Ginseng Root</td>
-      <td class="desc">Muslin bag 1 oz dried root. Organic forest-grown. </td>
+      <td class="desc">Muslin bag 1 oz dried root · organic forest-grown</td>
       <td class="price">$ ??? / bag</td>
     </tr>
-
   </tbody>
 </table>
+</div>
 
 <div class="divider"></div>
 
 <h2 class="section-head">Farmstand</h2>
 
+<div class="table-wrapper">
 <table class="product-table">
   <colgroup>
     <col style="width: 30%;">
@@ -190,8 +231,8 @@ body {
       <th class="price">&nbsp;</th>
     </tr>
   </thead>
-  <tbody>
 
+  <tbody>
     <tr class="unavailable seasonal">
       <td>Currant</td>
       <td class="desc">spring · 1 pint kraft box · American, black, red & white currants · organic</td>
@@ -221,9 +262,9 @@ body {
       <td class="desc">autumn · sold by the pound · raw & cured · CT-grown · organic</td>
       <td class="price">$8 / lb</td>
     </tr>
-
   </tbody>
 </table>
+</div>
 
 </body>
 </html>
