@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Garnet Brook Farm</title>
+
+<style>
+/* --- Base Layout & Typography --- */
+
+body {
+  font-family: serif;
+  background: linen;
+  color: #1e1b18; /* oak-gall ink */
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.2;
+}
+
+/* --- Header Block (Printer's Mark) --- */
+
+.header-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  opacity: 0.90;
+}
+
+.title-stack h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #3a332d;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+/* --- Section Headers --- */
+
+.section-head {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #3a332d;
+  font-style: italic;
+}
+
+/* --- Divider --- */
+
+.divider {
+  border-bottom: 2px dotted #c8c2b4;
+  margin: 2rem 0;
+}
+
+/* --- Product Table --- */
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.product-table th {
+  text-align: left;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #d8d2c4;
+  font-weight: normal;
+  color: #3a332d;
+}
+
+.product-table td {
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid #e2dbcd;
+}
+
+/* --- Description Column --- */
+
+.desc {
+  color: #4a453f;
+  font-size: 0.9rem;
+}
+
+/* --- Availability States --- */
+
+.available {
+  cursor: pointer;
+}
+
+.available:hover {
+  background: lightgoldenrodyellow;
+}
+
+.unavailable {
+  color: dimgray;
+}
+
+/* --- SOLD OUT Text --- */
+
+.soldout-text {
+  color: #b22222;      /* warm stamp red */
+  font-weight: bolder;   /* bold but not heavy */
+  font-size: 0.8rem;   /* smaller than body text */
+  letter-spacing: 0.3px; /* optional: gives it a typeset feel */
+}
+/* --- Price Column --- */
+
+.price {
+  text-align: right;
+  white-space: nowrap;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header with Printer's Mark -->
+<div class="header-block">
+  <img src="logo.png" alt="Garnet Brook Farm logo" class="logo">
+  <div class="title-stack">
+    <h1>Garnet Brook Farm</h1>
+    <span class="subtitle">tiny hillside orchard in Willington, CT</span>
+  </div>
+</div>
+
+<h2 class="section-head">Online Store</h2>
+
+<table class="product-table">
+  <colgroup>
+    <col style="width: 30%;">
+    <col style="width: 55%;">
+    <col style="width: 15%;">
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Description</th>
+      <th class="price">&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr class="available">
+      <td>Cornelian Cherry Seed</td>
+      <td class="desc">packet of 9 seeds · ancient dogwood species · edible fruit</td>
+      <td class="price">$ 5 / packet</td>
+    </tr>
+
+    <tr class="unavailable">
+      <td>Chestnut Flour</td>
+      <td class="desc">12 oz bag · milled CT-grown chestnuts · organic</td>
+      <td class="price">$ 15 / bag</td>
+    </tr>
+
+    <tr class="unavailable">
+      <td>American Ginseng Root</td>
+      <td class="desc">Muslin bag 1 oz dried root. Organic forest-grown. </td>
+      <td class="price">$ ??? / bag</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="divider"></div>
+
+<h2 class="section-head">Farmstand</h2>
+
+<table class="product-table">
+  <colgroup>
+    <col style="width: 30%;">
+    <col style="width: 55%;">
+    <col style="width: 15%;">
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Description</th>
+      <th class="price">&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr class="unavailable seasonal">
+      <td>Currant</td>
+      <td class="desc">spring · 1 pint kraft box · American, black, red & white currants · organic</td>
+      <td class="price">$6 / pint</td>
+    </tr>
+
+    <tr class="unavailable seasonal">
+      <td>Blueberry</td>
+      <td class="desc">summer · 1 pint kraft box · wild + cultivated mix · organic</td>
+      <td class="price">$6 / pint</td>
+    </tr>
+
+    <tr class="unavailable seasonal">
+      <td>Honeyberry</td>
+      <td class="desc">early summer · 1 pint kraft box · organic</td>
+      <td class="price">$6 / pint</td>
+    </tr>
+
+    <tr class="unavailable seasonal">
+      <td>Mulberry</td>
+      <td class="desc">early summer · 1 pint kraft box · flavorful hybrids · organic</td>
+      <td class="price">$6 / pint</td>
+    </tr>
+
+    <tr class="unavailable seasonal">
+      <td>Chestnut</td>
+      <td class="desc">autumn · sold by the pound · raw & cured · CT-grown · organic</td>
+      <td class="price">$8 / lb</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
