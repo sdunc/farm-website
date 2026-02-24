@@ -114,35 +114,40 @@ body {
 }
 
 @media (max-width: 600px) {
-  body {
-    padding: 1rem;
-    font-size: 1.45rem;
-    line-height: 1.55;
+
+  .product-table,
+  .product-table thead,
+  .product-table tbody,
+  .product-table tr,
+  .product-table th,
+  .product-table td {
+    display: block;
+    width: 100%;
   }
 
-  .title-stack h1 {
-    font-size: 2.3rem;
+  .product-table thead {
+    display: none;
   }
 
-  .subtitle {
-    font-size: 1.25rem;
+  .product-table tr {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px dotted #d8d2c4;
+    padding-bottom: 1rem;
   }
 
-  .product-table {
-    font-size: 1.3rem;
-    table-layout: auto;
+  .product-table td {
+    border: none;
+    padding: 0.25rem 0;
+  }
+
+  .product-table td.price {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 0.25rem;
   }
 
   .desc {
-    font-size: 1.2rem;
-  }
-
-  .product-table colgroup col {
-    width: auto !important;
-  }
-
-  td, th {
-    padding: 0.6rem 0.5rem;
+    margin-top: 0.25rem;
   }
 }
 </style>
