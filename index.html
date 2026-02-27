@@ -149,6 +149,14 @@ p {
 
 /* Collapse tables on touch devices */
 @media (pointer: coarse) {
+
+body {
+  max-width: 28rem;   /* much narrower than desktop */
+  padding: 1rem;      /* keep comfortable margins */
+  margin: 0 auto;
+  font-size: 1.25rem; /* optional: bump text size */
+}
+  
   .product-table,
   .product-table thead,
   .product-table tbody,
