@@ -6,7 +6,7 @@
 
 <style>
 html {
-  font-size: clamp(18px, 2.5vw, 22px);
+  font-size: 18px;
 }
 
 
@@ -120,8 +120,73 @@ p {
   white-space: nowrap;
 }
 
-@media (max-width: 900px) {
+.species-notes {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 2px dotted #c8c2b4;
+  max-width: 45rem;
+}
 
+.species-head {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #3a332d;
+  margin-bottom: 1rem;
+}
+
+.species-notes p {
+  margin: 0.2rem 0 0.6rem 0;
+  font-size: 0.95rem;
+  color: #3a332d;
+}
+
+.sp {
+  font-variant: small-caps;
+  letter-spacing: 0.5px;
+  color: #1e1b18;
+}
+
+
+/* Collapse tables on touch devices */
+@media (pointer: coarse) {
+  .product-table,
+  .product-table thead,
+  .product-table tbody,
+  .product-table tr,
+  .product-table th,
+  .product-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .product-table thead {
+    display: none;
+  }
+
+  .product-table tr {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px dotted #d8d2c4;
+    padding-bottom: 1rem;
+  }
+
+  .product-table td {
+    border: none;
+    padding: 0.25rem 0;
+  }
+
+  .product-table td.price {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 0.25rem;
+  }
+
+  .desc {
+    margin-top: 0.25rem;
+  }
+}
+
+/* Secondary catch-all for narrow viewports */
+@media (max-width: 700px) {
   .product-table,
   .product-table thead,
   .product-table tbody,
@@ -171,6 +236,8 @@ p {
 </div>
 
 <h2 class="section-head">Online Store</h2>
+<p>Order online for delivery through the mail. Opens fall 2026.</p>
+
 <!-- sticks out on page
  <p>Order online for delivery through the mail.</p> -->
 <div class="table-wrapper">
@@ -306,6 +373,14 @@ p {
   </tbody>
 </table>
 </div>
+
+<section class="species-notes">
+
+  <p><span class="sp">Cornus mas</span> fruits heavily after warm springs [1]</p>
+  <p><span class="sp">Asimina triloba</span> prefers deep shade in youth [1] [2]</p>
+  <p><span class="sp">Panax quinquefolius</span> strongest stands on north slopes [1]</p>
+  <p><span class="sp">Ribes nigrum</span> leaf scent varies wildly by cultivar</p>
+</section>
 
 </body>
 </html>
