@@ -9,174 +9,54 @@ html {
   font-size: 18px;
 }
 
-
 body {
   font-family: serif;
   background: beige;
   color: #1e1b18;
   margin: 0 auto;
-  padding: 1rem;
-  max-width: 60rem;
+  padding: 1.5rem;
+  max-width: 48rem;
   line-height: 1.35;
-  -webkit-text-size-adjust: 100%;
-
 }
 
-p {
-  margin: 0.25rem 0 0.75rem 0;
-  line-height: 1.3;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
+/* Header */
 .header-block {
   display: flex;
   align-items: center;
   gap: .7rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
-  width: 30px;
+  width: 45px;
   height: auto;
-  opacity: 0.90;
+  opacity: 0.80;
 }
 
 .title-stack h1 {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.05;
 }
 
 .subtitle {
+  margin-top: 0.15rem;
   font-size: 1rem;
   color: #3a332d;
-  line-height: 1.1;
   font-style: italic;
-}
-
-.section-head {
-  font-size: 1.2rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  color: #3a332d;
-  font-style: italic;
-}
-
-.divider {
-  border-bottom: 2px dotted Sienna;
-  margin: 2rem 0;
-}
-
-.table-wrapper {
-  width: 100%;
-}
-
-.product-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1rem;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
 }
 
-.product-table th {
-  text-align: left;
-  padding-bottom: 0.3rem;
-  border-bottom: 2px solid #1e1b18;
-  font-weight: normal;
-  color: #3a332d; 
-
+/* Headings */
+h3, h2 {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
 }
 
-.product-table td {
-  padding: 0.25rem 0.5rem;
-  border-bottom: 1px solid #1e1b18;
-}
-
-.desc {
-  color: #4a453f;
-  font-size: 0.9rem;
-}
-
-.available {
-  cursor: pointer;
-}
-
-.available:hover {
-  background: palegoldenrod;
-}
-
-.unavailable {
-  color: dimgray;
-}
-
-.soldout-text {
-  color: grey;
-  font-weight: bolder;
-  font-size: 0.8rem;
-  letter-spacing: 0.3px;
-}
-
-.price {
-  text-align: right;
-  white-space: nowrap;
-}
-
-.printer-mark {
-  margin-top: 3rem;
-  text-align: center;
-  opacity: 0.85;
-}
-
-.printer-mark img {
-  width: 400px;      /* tune to taste */
-  height: auto;
-  display: inline-block;
-  filter: grayscale(100%) contrast(180%);
-}
-
-
-
-/* Secondary catch-all for narrow viewports */
-@media (max-width: 700px) {
-  .product-table,
-  .product-table thead,
-  .product-table tbody,
-  .product-table tr,
-  .product-table th,
-  .product-table td {
-    display: block;
-    width: 100%;
-  }
-
-  .product-table thead {
-    display: none;
-  }
-
-  .product-table tr {
-    margin-bottom: 1.5rem;
-    border-bottom: 2px dotted #d8d2c4;
-    padding-bottom: 1rem;
-  }
-
-  .product-table td {
-    border: none;
-    padding: 0.25rem 0;
-  }
-
-  .product-table td.price {
-    text-align: left;
-    font-weight: bold;
-    margin-top: 0.25rem;
-  }
-
-  .desc {
-    margin-top: 0.25rem;
-  }
+/* Paragraphs */
+p {
+  margin: 0.25rem 0 1rem 0;
+  line-height: 1.3;
 }
 </style>
 </head>
@@ -187,121 +67,32 @@ h1 {
   <img src="logo.png" alt="Garnet Brook Farm logo" class="logo">
   <div class="title-stack">
     <h1>Garnet Brook Farm</h1>
-    <!-- <span class="subtitle">tiny orchard of uncommon fruit</span> -->
+    <span>uncommon fruit garden in Willington, CT</span>
   </div>
 </div>
+<p>This project started February 2025.</p>
 
-<p>Garnet Brook Farm is a single acre experimental farm in Willington, CT.</p>
+<h3>Chestnut</h3>
+<!-- <p>is the keystone of Garnet Brook Farm. </p> -->
 
-<!--
-<h2 class="section-head">Online Store</h2>
-<p>Order online for delivery through the mail.</p>
+<h3>Gooseberry</h3>
+<p>I am testing many gooseberries.</p>
+<p>
+  Ribes 'Hinnomaki Red'
+  <br>
+  Ribes 'Oregon Champion'
+</p>
 
-<div class="table-wrapper">
-<table class="product-table">
-  <colgroup>
-    <col style="width: 30%;">
-    <col style="width: 60%;">
-    <col style="width: 10%;">
-  </colgroup>
+<h3>Marigold</h3>
+<p>The smell of marigolds takes me back to elementary school. The plant sale. A yearly adjustment to class schedule rivaling the scholastic book fair in terms of excitement. Flats of plants on plastic folding tables have been squeezed into the hallways. I remember flower heads in fiery colors. The thin black plastic of the flower 6-pack crinkles in my hands. I remember the smell of marigolds. </p>
+<p>Tagetes (tah juh teez) is the marigold genus. Tagetes patula is the French marigold, not from France. Tagetes erecta is the African marigold, not from Africa. Tagetes tenuifolia is the signet marigold, and my favorite.</p>
+<p>Tagetes patula 'Mr Majestic'
+<br>Tagetes tenuifolia 'Orange Gem'
+</p>
 
-  <thead>
-    <tr>
-      <th>Product</th>
-      <th>Description</th>
-      <th class="price">&nbsp;</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr class="available">
-      <td>Cornelian Cherry Fruit Leather</td>
-      <td class="desc">1 oz sheet · ancient dogwood species</td>
-      <td class="price">$ 8 / sheet</td>
-    </tr>
-
-    <tr class="unavailable">
-      <td>Chestnut Flour</td>
-      <td class="desc">12 oz bag · milled CT-grown chestnuts · organic</td>
-      <td class="price"></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<h2 class="section-head">Farmstand</h2>
-<p>Work in progress. Need to site the stand with help from neighbors and town.</p>
-<div class="table-wrapper">
-<table class="product-table">
-  <colgroup>
-    <col style="width: 30%;">
-    <col style="width: 60%;">
-    <col style="width: 10%;">
-  </colgroup>
-
-  <thead>
-    <tr>
-      <th>Product</th>
-      <th>Description</th>
-      <th class="price">&nbsp;</th>
-    </tr>
-  </thead>
-
-  <tbody>
-<tr class="unavailable seasonal">
-  <td>Ramps</td>
-  <td class="desc">spring · forest-grown · sold by the bunch · organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Lingonberry</td>
-  <td class="desc">summer... organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Currant</td>
-  <td class="desc">spring · 1 pint kraft box · American, black, red & white currants · organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Gooseberry</td>
-  <td class="desc">Summer · 1 pint kraft box · captivator hybrid · organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Blueberry</td>
-  <td class="desc">summer · 1 pint kraft box · wild + cultivated mix · organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Honeyberry</td>
-  <td class="desc">early summer · 1 pint kraft box · organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Mulberry</td>
-  <td class="desc">early summer · 1 pint kraft box · flavorful hybrids · organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Pawpaw</td>
-  <td class="desc">autumn · cultivar seedling fruits · CT-grown · organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Persimmon</td>
-  <td class="desc">autumn · American · organic</td>
-  <td class="price"></td>
-</tr>
-<tr class="unavailable seasonal">
-  <td>Chestnut</td>
-  <td class="desc">autumn · sold by the pound · raw & cured · CT-grown · organic</td>
-  <td class="price"></td>
-</tr>
-  </tbody>
-</table>
-</div>
--->
+<h3>Mulberry</h3>
+<!-- <p>Another that I met when I was very young. The rear entrance of my hometown public library was cloaked in mulberry trees. Massive trees flanking the revolutionary war cemetary and along the cobbled walk. In summer the fruits would fall thick and be tracked in and onto the library carpets. I wonder if that is why they cut the trees.  </p> -->
+<p></p>
 
 </body>
 </html>
