@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Garnet Brook Farm</title>
-    <link rel="icon" type="image/png" href="lily.png">
+    <link rel="icon" type="image/png" href="logo.png">
 
 <style>
 html {
@@ -14,66 +14,116 @@ ul {
   margin: 0;
 }
 
-body {
+body 
+{
   font-family: serif;
-  background: #f6e7c1;
+  background: beige;
   color: #3e3e3e;
   margin: 0 auto;
   padding: 1.5rem;
-  max-width: 48rem;
+  max-width: 40rem;
   line-height: 1.35;
 }
 
-a {
-  background: palegoldenrod;
+a 
+{
+    color: #3e3e3e;
+  background: #feefb3;
+  border-radius: 8px;
 }
 
-a:visited{
+a:visited
+{
   background: beige; !important;
 }
 
-a:hover {
-  background: whitesmoke;
+a:hover 
+{
+  background: #feefb3;
 }
 
-.header-block {
+.header-block 
+{
   display: flex;
   align-items: center;
-  gap: .7rem;
+  gap: 0.7rem;
   margin-bottom: 1rem;
 }
 
-.logo {
-  width: auto;
-  height: 55px;
+.logo 
+{
+  width: 100%;
+  max-width: 60px;
+  height: auto;
   opacity: 0.80;
 /*  border: 1px solid #3e3e3e;*/
 }
 
-.title-stack h1 {
+.title-stack h1 
+{
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.05;
 }
 
-.subtitle {
+.subtitle 
+{
   margin-top: 0.15rem;
   font-size: 1rem;
-  color: #3a332d;
-  font-style: italic;
+  color: #593e44;
   line-height: 1.1;
 }
 
-/* Headings */
-h3, h2, h4 {
-  margin-top: 1rem;
-  margin-bottom: 0rem;
+h3, h2, h4 
+{
+  margin-top: 1rem 0 0 0;
   display: inline;
 }
 
-p {
+p 
+{
   margin: 0.25rem 0 0.5rem 0;
   line-height: 1.3;
+}
+
+blockquote {
+  /* Generous indentation on both sides, mimicking a narrower measure column */
+  margin: 1.5rem 2.5rem;
+  padding: 0;
+  
+  /* No background colors, no shadows, no borders (printers didn't have CSS boxes!) */
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  
+  /* Traditional 18th-century typesetting shift: slightly smaller and italicized */
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: #3e3e3e;
+}
+
+/* If you have paragraphs inside the quote, give them traditional block indentation */
+blockquote p {
+  text-indent: 1.5rem; /* Early American printers loved paragraph indentation */
+  margin: 0;
+}
+
+/* Remove indent on the very first paragraph if it flows directly from an intro */
+blockquote p:first-child {
+  text-indent: 0; 
+}
+
+/* Attribution / Sign-off styled like a classic printer's signature or source note */
+blockquote cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.05em; /* Spacing out capitals gives it an antique press look */
+  text-align: right;
+  color: #593e44;
 }
 </style>
 </head>
@@ -84,129 +134,52 @@ p {
   <img src="logo.png" alt="Garnet Brook Farm logo - from japanese microseasons book" class="logo">
   <div class="title-stack">
     <h1>garnet brook farm</h1>
-    <span>tiny hillside orchard in Willington, CT</span>
+    <span class="subtitle">hillside orchard in Willington, CT</span>
   </div>
 </div>
 
-<p>Updated August 16 2026.<br> E-mail me: <img src="addy.png" style="width: 200px; vertical-align: text-bottom;"></p>
+<p></p>
 
-<h2>Farmstand at the corner of Mihaliak Rd and Mihaliak Rd Ext. (<a href="https://maps.app.goo.gl/RXspbUPiitgJXH2DA" target="_blank">Map</a>)</h2>
-<p>
-<div style="display: flex; gap: 10px;">
-  <img src="farmstand1.png" style="width: 50%; height: auto;">
-  <img src="farmstandmenu.png" style="width: 50%; height: auto;">
-</div>
-</p>
-<p>2027 will be the first year of the farmstand. <br></p>
-
-
-<h2>Online: books, products, seeds</h2>
+<!-- <h3>herbal</h3>
 <p>
   Apios americana, groundnut, 'Hockanum forage'<br>
   Marigold 'Mr. Majestic'<br>
+</p> -->
 
-</p>
-
-<h2>Cultivar Catalog</h2>
+<!-- <h2>Cultivar Catalog</h2>
 
 <p>
 <h2>Asparagus</h2>
-<p>Lily family. Beach lover. Umm...many varieties trialing! Ideas: Plant with tomato, they are supposed to repel eachothers pests. Plant with saffron, I could plant a row of saffron bulbs between asparagus beds. What kind of tool is best to harvest asparagus? Score: vigor, thickness, resistances, flavor, color. </p>
+<p>Lily family. Beach lover. Umm...many varieties trialing! Ideas: Plant with tomato, they are supposed to repel eachothers pests. Plant with saffron, I could plant a row of saffron bulbs between asparagus beds. What kind of tool is best to harvest asparagus? Score: vigor, thickness, resistances, flavor, color. </p> -->
 
-<h3>Asparagus (Argenteuil)</h3>
-<ul>
-  <li>seeds from italy, good germ, blaching.</li>
-</ul>
+<!-- <p>E-mail me: <img src="addy.png" style="width: 200px; vertical-align: text-bottom;"></p> -->
 
-<h3>Asparagus (Sweet purple)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (UC 72)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (UC 157 F1)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (UC 157 F2)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (Mary Washington)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (Purple passion)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (Atlas)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (Apollo)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (Millenium)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (Jersey Supreme)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (Jersey Knight)</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3>Asparagus (Spartacus)</h3>
-<ul>
-  <li></li>
-</ul>
-</p>
-
-
-<!-- 
-<h2>Chestnut</h2>
-<p>persist along the roads and in the forests of Willington. Chestnut blight is visible, orange cracks where the bark is pulling together over an open wound. </p>
-<blockquote>Chestnut is completely absent from the witness tree data in the original eastern Massachusetts towns of Cambridge, Sudbury,
-Framingham, Hopkinton, and Grafton. In
-other words, for the first one-third of Mr.
-Hooker’s journey from Cambridge to Hartford, there is a good chance that his company saw few if any American chestnut trees.
+<h3>Chestnut, <i>Castanea</i></h3>
+<p>American chestnut persists along the roads and in the forests of Willington.<br>
+Chestnut blight is visible, orange cracks where the bark splits into an open wound. </p>
+<blockquote>
 Not until Sutton, Massachusetts, would Mr.
 Hooker have begun to encounter chestnuts
-regularly. <b>From Woodstock to Hartford,
+regularly. From Woodstock to Hartford,
 chestnut would have been a common tree
-in the forest.</b>
-<br><a href="https://harvardforest1.fas.harvard.edu/publications/pdfs/Faison_CTWoodlands_2014.pdf">Faison, Connecticut Woodlands</a>
+in the forest.<br>
+  <cite><a href="https://harvardforest1.fas.harvard.edu/publications/pdfs/Faison_CTWoodlands_2014.pdf" target="_blank">Faison, Connecticut Woodlands</a></cite>
+<br>
 </blockquote>
- -->
-<!-- <p>The plan: plant seeds from the best Chinese chestnuts and hybrids. This happens to be the plan for every crop. Plant a mix of seeds from the strains that appeal to me and see what takes.</p> -->
+<p>Our first Castanea mollissima (and hybrid) chestnuts were planted from seed in 2025! </p>
 
-<!-- 
+<p>American Chestnut was prized lumber. The <a href="https://www.historichenriettahousebnbct.com/" target="_blank">Henrietta House</a> floors are chestnut.
 
-<h3>Gooseberry</h3>
+
+
+<!-- <h3>Gooseberry</h3>
 <p>I am trialing many varieties.</p>
 <ul>
   <li>'Hinnomaki Red'</li>
   <li>'Oregon Champion'</li>
   <li>'Captivator'</li>
   <li></li>
-</ul> -->
+</ul>  -->
 
 <!-- <h3>Marigold</h3>
 <p>The smell of marigolds takes me back to elementary school. The plant sale. A yearly class schedule adjustment rivaling the book fair in terms of excitement. Flats of plants on plastic folding tables have been squeezed into the hallways. I remember flower heads in fiery colors. The thin black plastic of the flower 6-pack crinkles in my hands. I remember the smell of marigolds. </p>
@@ -222,22 +195,17 @@ in the forest.</b>
  -->
 <!-- <h3>Mulberry</h3> -->
 <!-- <p>Another that I met when I was very young. The rear entrance of my hometown public library was cloaked in mulberry trees. Massive trees flanking the revolutionary war cemetary and along the cobbled walk. In summer the fruits would fall thick   </p> -->
+<!-- <blockquote>
+<p>
+"The Giving Tree" is a large persimmon tree in an urban backyard in Bloomington, Indiana. The tree is well-known locally for its abundant yields, topping 1000 pounds a year (100 pounds is considered a good yield for the species), of medium-sized, sweet fruits which are free from the astringency that makes so many American persimmons unpalatable. Even slightly underripe fruits are not astringent. 
+</p>
+<p>
+Fruits typically begin falling in late August and continue through mid-October — a very long season for the species. Owner Louise Briggs hosts her annual "Perpetual Persimmon Pulping Parties" during this time. It has become a yearly tradition for the Briggs family to erect a net system and offer the fruits up to the community for free via an online Google spreadsheet.
+<p>
+  The tree's provenance is uncertain, but it is estimated to be over 65 years old. It seems unlikely to be a wild seedling tree, but the exact parentage or variety is unknown (we can't tell from photos if there's an obvious graft union on the tree). Perhaps someday DNA technology and our beloved tree-mad friends like Eliza Greenman or Zach Elfers will figure out more of the story. Given the age of the tree and its prodigious and early fruiting, we know the genetics of The Giving Tree deserve to be saved, shared, and hopefully incorporated into future American persimmon breeding projects.
+</p>
+<a href="https://store.experimentalfarmnetwork.org/collections/everything/products/giving-tree-persimmon">EFN</a></blockquote>
+ -->
 
 </body>
 </html>
-
-<!-- The desolate land will be cultivated instead of lying desolate in the sight of all who pass through it. -->
-
-<!-- Forgotten Language
-Once I spoke the language of the flowers,
-Once I understood each word the caterpillar said,
-Once I smiled in secret at the gossip of the starlings,
-And shared a conversation with the housefly
-in my bed.
-Once I heard and answered all the questions
-of the crickets,
-And joined the crying of each falling dying
-flake of snow,
-Once I spoke the language of the flowers. . . .
-How did it go?
-How did it go? -->
