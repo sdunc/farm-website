@@ -50,7 +50,7 @@ body {
 }
 
 .subtitle {
-    font-size: 0.9rem;
+    font-size: clamp(1rem, 1vw + 0.1rem, 1.3rem);
     margin: 0;
     color: #593e44;
 }
@@ -76,7 +76,21 @@ body {
     line-height: 1.4;
 }
 
-.map-section img {
+img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+h1 {
+    /* Scales from roughly 24px on tiny phones up to 36px on desktops */
+    font-size: clamp(1.5rem, 4vw + 1rem, 2.25rem);
+    text-align: center;
+}
+
+p {
+    /* Scales body text from 18px on phones to 21px on desktops for easy reading */
+    font-size: clamp(1.125rem, 1.5vw + 0.8rem, 1.3rem);
+    line-height: 1.6;
 }
