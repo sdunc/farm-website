@@ -1,220 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Garnet Brook Farm</title>
-    <link rel="icon" type="image/png" href="logo.png">
-
-<style>
-html {
-  font-size: 18px;
-}
-
-ul {
-  margin: 0;
-}
-
-body 
-{
-  font-family: serif;
-  background: beige;
-  color: #3e3e3e;
-  margin: 0 auto;
-  padding: 1.5rem;
-  max-width: 40rem;
-  line-height: 1.35;
-}
-
-a 
-{
-    color: #3e3e3e;
-  background: #feefb3;
-  border-radius: 8px;
-}
-
-a:visited
-{
-  background: beige; !important;
-}
-
-a:hover 
-{
-  background: #feefb3;
-}
-
-.header-block 
-{
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 1rem;
-}
-
-.logo 
-{
-  width: 100%;
-  max-width: 60px;
-  height: auto;
-  opacity: 0.80;
-/*  border: 1px solid #3e3e3e;*/
-}
-
-.title-stack h1 
-{
-  margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.05;
-}
-
-.subtitle 
-{
-  margin-top: 0.15rem;
-  font-size: 1rem;
-  color: #593e44;
-  line-height: 1.1;
-}
-
-h3, h2, h4 
-{
-  margin-top: 1rem 0 0 0;
-  display: inline;
-}
-
-p 
-{
-  margin: 0.25rem 0 0.5rem 0;
-  line-height: 1.3;
-}
-
-blockquote {
-  /* Generous indentation on both sides, mimicking a narrower measure column */
-  margin: 1.5rem 2.5rem;
-  padding: 0;
-  
-  /* No background colors, no shadows, no borders (printers didn't have CSS boxes!) */
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  
-  /* Traditional 18th-century typesetting shift: slightly smaller and italicized */
-  font-size: 0.95rem;
-  font-style: italic;
-  line-height: 1.4;
-  color: #3e3e3e;
-}
-
-/* If you have paragraphs inside the quote, give them traditional block indentation */
-blockquote p {
-  text-indent: 1.5rem; /* Early American printers loved paragraph indentation */
-  margin: 0;
-}
-
-/* Remove indent on the very first paragraph if it flows directly from an intro */
-blockquote p:first-child {
-  text-indent: 0; 
-}
-
-/* Attribution / Sign-off styled like a classic printer's signature or source note */
-blockquote cite {
-  display: block;
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-  font-style: normal;
-  font-variant: small-caps;
-  letter-spacing: 0.05em; /* Spacing out capitals gives it an antique press look */
-  text-align: right;
-  color: #593e44;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Garnet Brook Farm</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="farm-container">
+      <header class="site-header">
+          <div class="header-left">
+              <img src="logo.png" alt="Garnet Brook Farm logo" class="logo">
+              <div class="title-block">
+                  <h1>garnet brook farm</h1>
+                  <p class="subtitle">Willington, CT</p>
+              </div>
+          </div>
 
-<div class="header-block">
-  <img src="logo.png" alt="Garnet Brook Farm logo - from japanese microseasons book" class="logo">
-  <div class="title-stack">
-    <h1>garnet brook farm</h1>
-    <span class="subtitle">Willington, CT</span>
-  </div>
-</div>
+          <!-- Future Shopping Cart Icon/Link -->
+          <a href="#cart" class="cart-link" aria-label="Shopping Cart">
+              🛒 <span class="cart-count">0</span>
+          </a>
+      </header>
 
-<p>An experimental farm cultivating <a href="">small fruit</a> and <a href="">chestnuts</a>, <br>a tiny section of hull on spaceship earth.</p>
+        <p class="description">
+            An experimental <a href="file:///C:/Users/Stephen/Documents/farm-website/index.html">small fruit</a> and <a href="file:///C:/Users/Stephen/Documents/farm-website/index.html">chestnut</a> farm, <br>
+            a tiny section of hull on spaceship earth.
+        </p>
 
-<!-- <p>The hull, spaceship earth<br>
-here, pines spring from glacial hills<br>
-dying ash, chestnut</p> -->
-
-<p>
-<img src="map1.png">
-</p>
-
-
-<!-- <h3>herbal</h3>
-<p>
-  Apios americana, groundnut, 'Hockanum forage'<br>
-  Marigold 'Mr. Majestic'<br>
-</p> -->
-
-<!-- <h2>Cultivar Catalog</h2>
-
-<p>
-<h2>Asparagus</h2>
-<p>Lily family. Beach lover. Umm...many varieties trialing! Ideas: Plant with tomato, they are supposed to repel eachothers pests. Plant with saffron, I could plant a row of saffron bulbs between asparagus beds. What kind of tool is best to harvest asparagus? Score: vigor, thickness, resistances, flavor, color. </p> -->
-
-<!-- <p>E-mail me: <img src="addy.png" style="width: 200px; vertical-align: text-bottom;"></p> -->
-<!-- 
-<h3>Chestnut, <i>Castanea</i></h3>
-<p>American chestnuts persist along the roads and in the forests of Willington.<br>
-Chestnut blight is visible, orange cracks where the bark splits into an open wound. </p>
-<blockquote>
-Not until Sutton, Massachusetts, would Mr.
-Hooker have begun to encounter chestnuts
-regularly. From Woodstock to Hartford,
-chestnut would have been a common tree
-in the forest.<br>
-  <cite><a href="https://harvardforest1.fas.harvard.edu/publications/pdfs/Faison_CTWoodlands_2014.pdf" target="_blank">Faison, Connecticut Woodlands</a></cite>
-<br>
-</blockquote>
-<p>Our first Castanea mollissima (and hybrid) chestnuts were planted from seed in 2025! </p>
-
-<p>American Chestnut was prized lumber. The <a href="https://www.historichenriettahousebnbct.com/" target="_blank">Henrietta House</a> floors are chestnut.
- -->
-
-
-<!-- <h3>Gooseberry</h3>
-<p>I am trialing many varieties.</p>
-<ul>
-  <li>'Hinnomaki Red'</li>
-  <li>'Oregon Champion'</li>
-  <li>'Captivator'</li>
-  <li></li>
-</ul>  -->
-
-<!-- <h3>Marigold</h3>
-<p>The smell of marigolds takes me back to elementary school. The plant sale. A yearly class schedule adjustment rivaling the book fair in terms of excitement. Flats of plants on plastic folding tables have been squeezed into the hallways. I remember flower heads in fiery colors. The thin black plastic of the flower 6-pack crinkles in my hands. I remember the smell of marigolds. </p>
-<p>Tagetes (tah juh teez) is the marigold genus. Tagetes patula is the French marigold, not from France. Tagetes erecta is the African marigold, not from Africa. Tagetes tenuifolia is the signet marigold, my favorite.</p>
-<p>Tagetes patula 'Mr Majestic'
-<br>Tagetes tenuifolia 'Orange Gem'
-</p>
-
-<h3>Rhubarb</h3>
-<ul>
-  <li>'Victoria Red'</li>
-</ul>
- -->
-<!-- <h3>Mulberry</h3> -->
-<!-- <p>Another that I met when I was very young. The rear entrance of my hometown public library was cloaked in mulberry trees. Massive trees flanking the revolutionary war cemetary and along the cobbled walk. In summer the fruits would fall thick   </p> -->
-<!-- <blockquote>
-<p>
-"The Giving Tree" is a large persimmon tree in an urban backyard in Bloomington, Indiana. The tree is well-known locally for its abundant yields, topping 1000 pounds a year (100 pounds is considered a good yield for the species), of medium-sized, sweet fruits which are free from the astringency that makes so many American persimmons unpalatable. Even slightly underripe fruits are not astringent. 
-</p>
-<p>
-Fruits typically begin falling in late August and continue through mid-October — a very long season for the species. Owner Louise Briggs hosts her annual "Perpetual Persimmon Pulping Parties" during this time. It has become a yearly tradition for the Briggs family to erect a net system and offer the fruits up to the community for free via an online Google spreadsheet.
-<p>
-  The tree's provenance is uncertain, but it is estimated to be over 65 years old. It seems unlikely to be a wild seedling tree, but the exact parentage or variety is unknown (we can't tell from photos if there's an obvious graft union on the tree). Perhaps someday DNA technology and our beloved tree-mad friends like Eliza Greenman or Zach Elfers will figure out more of the story. Given the age of the tree and its prodigious and early fruiting, we know the genetics of The Giving Tree deserve to be saved, shared, and hopefully incorporated into future American persimmon breeding projects.
-</p>
-<a href="https://store.experimentalfarmnetwork.org/collections/everything/products/giving-tree-persimmon">EFN</a></blockquote>
- -->
+        <div class="map-section">
+            <img src="map1.png" alt="Farm Map">
+        </div>
+    </div>
 
 </body>
 </html>
