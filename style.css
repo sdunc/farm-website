@@ -71,12 +71,6 @@ body {
     background: rgba(0, 0, 0, 0.1);
 }
 
-/* Description and Map centered styling */
-.description {
-    text-align: center;
-    line-height: 1.4;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -93,5 +87,5 @@ h1 {
 p {
     /* Scales body text from 18px on phones to 21px on desktops for easy reading */
     font-size: clamp(1.125rem, 1.5vw + 0.8rem, 1.3rem);
-    line-height: 1.6;
+    line-height: 1.4;
 }
