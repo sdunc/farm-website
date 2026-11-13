@@ -1,8 +1,49 @@
+@font-face {
+    font-family: charter;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url('charter_regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: charter;
+    font-style: italic;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url('charter_italic.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: charter;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('charter_bold.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: charter;
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('charter_bold_italic.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* Establish the root base size for all rem calculations */
+html {
+    font-size: 16px;
+}
+
 body {
+    font-family: "charter", serif;
     background-color: beige;
-    font-family: serif;
     margin: 0;
-    padding: 16px;
+    padding: 1rem; /* 16px */
     display: flex;
     justify-content: center;
 }
@@ -11,37 +52,35 @@ body {
 .farm-container {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 25rem; /* ~400px */
     width: 100%;
-    gap: 8px;
-    margin-top: 16px;
+    gap: 0.5rem; /* 8px */
+    margin-top: 1rem; /* 16px */
     box-sizing: border-box;
 }
 
-/* Header layout: Spreads left side (logo/text) and right side (cart) apart */
-/* space evenly if I add the shopping bag */
+/* Header layout */
 .site-header {
     display: flex;
-/*    justify-content: space-evenly;*/
     align-items: center;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 0.625rem; /* 10px */
 }
 
 /* Groups the logo and title block together */
 .header-left {
     display: flex;
     align-items: center;
-    gap: 16px; /* Controls space between the logo and text */
+    gap: 1rem; /* 16px */
 }
 
 .logo {
-    width: 60px;
+    width: 3.75rem; /* 60px */
     height: auto;
 }
 
 .title-block h1 {
-    margin: 0 0 2px 0; /* tucked subtitle right under the title */
+    margin: 0 0 0.125rem 0; /* Tucked subtitle right under */
     font-weight: bold;
     text-align: left;
 }
@@ -57,34 +96,27 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-/*    margin: 1rem auto;*/
 }
 
 h1 {
-    /* Scales from roughly 24px on tiny phones up to 36px on desktops */
+    /* Scales from ~20.8px on tiny phones up to 32px on desktops */
     font-size: clamp(1.3rem, 3vw + 1rem, 2rem);
     text-align: center;
 }
 
 p {
-    /* Scales body text from 18px on phones to 21px on desktops for easy reading */
+    /* Scales body text from 18px on phones to ~20.8px on desktops */
     font-size: clamp(1.125rem, 1.5vw + 0.8rem, 1.3rem);
     line-height: 1.4;
     text-align: left;
 }
 
-a:link {
-  text-decoration: none;
-}
-
+a:link,
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
+a:hover,
 a:active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
