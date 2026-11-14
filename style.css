@@ -43,7 +43,7 @@ body {
     font-family: "charter", serif;
     background-color: ##b8c2b9;
     margin: 0;
-    padding: 1rem; /* 16px */
+    padding: 1.5rem; /* 16px */
     display: flex;
     justify-content: center;
 }
@@ -52,10 +52,9 @@ body {
 .farm-container {
     display: flex;
     flex-direction: column;
-    max-width: 25rem; /* ~400px */
+    max-width: 30rem; /* ~400px */
     width: 100%;
     gap: 0.5rem; /* 8px */
-    margin-top: 1rem; /* 16px */
     box-sizing: border-box;
 }
 
