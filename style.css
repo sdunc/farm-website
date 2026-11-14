@@ -41,7 +41,7 @@ html {
 
 body {
     font-family: "charter", serif;
-    background-color: beige;
+    background-color: ##b8c2b9;
     margin: 0;
     padding: 1rem; /* 16px */
     display: flex;
@@ -111,12 +111,18 @@ p {
     text-align: left;
 }
 
-a:link,
+a:link {
+    color: #0030AD;
+    text-decoration: none;
+
+}
+
 a:visited {
     text-decoration: none;
+    color: #593e44;
 }
 
 a:hover,
 a:active {
-    text-decoration: underline;
+    background-color: #c2e5ff;
 }
