@@ -41,7 +41,6 @@ html {
 
 body {
     font-family: "charter", Georgia, serif;
-    background-color: #F0EAD6; /* Fixed double '#' so sage background renders */
     margin: 0;
     padding: 1.5rem;
     display: flex;
